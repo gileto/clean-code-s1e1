@@ -55,7 +55,7 @@ h3 {
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
@@ -117,7 +117,6 @@ label[for="new-task"] {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,7 +137,7 @@ label[for="new-task"] {
   width: 226px;
 }
 
-.list-item >    input[type="text"] {
+.list-item > input[type="text"] {
   width: 226px
 }
 
