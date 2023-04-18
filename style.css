@@ -22,7 +22,8 @@
 
 @media (max-width:768px) {
     
-  .matrix-description { text-align: center;
+  .matrix-description { 
+    text-align: center;
   }
   
 }
