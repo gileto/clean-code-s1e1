@@ -109,9 +109,6 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-.list__list-item > * {
-  vertical-align: middle;
-}
 
 .list__list-item > input[type="checkbox"] {
   margin: 0 10px;
@@ -128,13 +125,13 @@ input[type="text"]:focus {
   width: 226px;
 }
 
-.delete img {
+.delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.delete__img:hover {
   transform: rotateZ(0);
 }
 
