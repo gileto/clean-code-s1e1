@@ -53,7 +53,7 @@ var createNewTaskElement=function(taskString){
 
 
     //and appending.
-    listItem.classList.add("list-item");
+    listItem.classList.add("list__list-item");
     listItem.appendChild(checkBox);
     listItem.appendChild(span);
     listItem.appendChild(editInput);
@@ -69,7 +69,7 @@ var addTask=function(){
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
-    listItem.classList.add('list-item')
+    listItem.classList.add('list__list-item')
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
@@ -86,7 +86,7 @@ var editTask=function(){
 
 
     var listItem=this.parentNode;
-    listItem.classList.add('list-item')
+    listItem.classList.add('list__list-item')
     var editInput=listItem.querySelector('input[type=text]');
     var span=listItem.querySelector("span");
     var editBtn=listItem.querySelector(".edit");
@@ -126,7 +126,7 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
-    listItem.classList.add('list-item');
+    listItem.classList.add('list__list-item');
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
